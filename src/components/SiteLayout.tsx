@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import PulseFitnessLogo from "@/PulseFitness.png";
 import { useState, type ReactNode } from "react";
 import {
   FaFacebookF,
@@ -23,8 +22,9 @@ export function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-white border-b-2 border-primary shadow-[0_10px_30px_-15px_rgba(255,0,0,0.15)] transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-3 sm:py-4 grid grid-cols-[1fr_auto] lg:grid-cols-[auto_1fr_auto] items-center gap-3 sm:gap-6">
-        <Link to="/" className="flex items-center shrink-0">
-          <img src={PulseFitnessLogo} alt="Pulse Fitness" className="h-10 sm:h-12 w-auto object-contain" />
+        <Link to="/" className="flex items-center gap-2 shrink-0">
+          <span className="font-display text-2xl sm:text-3xl tracking-wider text-primary">PULSE</span>
+          <span className="font-display text-2xl sm:text-3xl tracking-wider text-black">FITNESS</span>
         </Link>
 
         <nav className="hidden lg:flex items-center justify-center gap-8 text-sm font-semibold uppercase tracking-wide">
@@ -92,8 +92,9 @@ export function Footer() {
     <footer className="border-t border-border bg-card/40 pt-16 pb-8 px-6">
       <div className="mx-auto max-w-7xl grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div>
-          <Link to="/" className="flex items-center">
-            <img src={PulseFitnessLogo} alt="Pulse Fitness" className="h-12 w-auto object-contain" />
+          <Link to="/" className="flex items-center gap-2">
+            <span className="font-display text-3xl text-primary">PULSE</span>
+            <span className="font-display text-3xl">FITNESS</span>
           </Link>
           <div className="mt-4 flex gap-2">
             {socials.map((s, index) => (
