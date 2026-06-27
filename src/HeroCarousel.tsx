@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Dumbbell, Barbell, BarChart2, Calendar } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Dumbbell, BarChart2, Calendar } from 'lucide-react';
 
 // High‑quality unsplash images (you can replace with your own URLs)
 const SLIDES = [
